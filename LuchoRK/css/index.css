@@ -1,6 +1,5 @@
 h3 {
     font-size: 50px;
-    color: var(--secundary-color);
     margin: 0px 0 10px 0 ;
     max-width: 20%;
     line-height: 1.1;
@@ -8,7 +7,7 @@ h3 {
 
 }
 
-h4 {
+h4 {/*-----SUBTITULOS------- */
     font-size: 30px;
     color: var(--accent-color);
     margin: 0;
@@ -25,16 +24,12 @@ h5{
     margin-top: 20px;    
 }
 
-.content3 a {
-    text-decoration: none;
-    color: var(--accent-color);
-}
+
 
 
 
 h6 {
     text-align: justify;
-    color: var(--secundary-color);
     font-size: 15px;
     margin: 10px 0 10px 0 ;
     max-width: 35%;
@@ -72,6 +67,10 @@ h6 {
     color: var(--text-color);
 }
 
+.content2 h4 {
+    margin: 20px 0 20px 0   ;
+}
+
 
 /*-------------------CONTENT 3------------*/
 
@@ -92,8 +91,27 @@ div#content.content3{
     flex-wrap: wrap;
 }
 
+.content3 a {
+    text-decoration: none;
+    color: var(--accent-color);
+    border-bottom: 1px solid transparent;
+}
+
+.content3 a:hover {
+    color: #ff7949;
+    border-bottom-color: var(--accent-color);
+}
+
 .content3 p {
-    color: var(--text-color);
+    color: var(--secundary-color);
+}
+
+.content3 h3 {
+    color: var(--secundary-color);
+}
+
+.content3 h6 {
+    color: var(--secundary-color);
 }
 
 .content3 img {
@@ -103,4 +121,42 @@ div#content.content3{
     padding-left: 20%;
     padding-top: 0;
     margin-bottom: 0;
+}
+
+
+/*----------CONCIERTOS----------*/
+.concert h3 {
+    font-size: 20px;
+}
+
+.concert-group ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    align-items: center;
+    border-bottom: solid 1px #ffffff42;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.concert-group ul.titulo {
+    font-size: 25px;
+}
+
+.concert-group ul li {
+    display: flex; /* La verdad que simplemente funciona asique a la minima quito esto*/
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    color: var(--text-color);
+}
+
+.concert-group ul li a {
+    font-size: 20px;
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+
 }
