@@ -14,15 +14,15 @@ html {
 body {
     margin: 0;
     font-family: "Oswald", sans-serif, "Basic";
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*------------------MENU-------------------------*/
 header {
-background: #ffffff;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.26) 77%, rgba(255, 255, 255, 0) 100%);
+    background: #ffffff;
+    background: linear-gradient(180deg, #ffffff42 77%, #ffffff00 100%);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,9 +32,9 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.26) 77%, rgba(255, 255
 }
 
 header img {
-max-width: 140px;
-max-height: 80px;
-margin-left: 20px;
+    max-width: 140px;
+    max-height: 80px;
+    margin-left: 100px;
 }
 
 nav ul {
@@ -60,6 +60,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--text-color);
+    
 }
 
 
