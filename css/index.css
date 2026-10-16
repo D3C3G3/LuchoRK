@@ -1,0 +1,226 @@
+h3 {
+    font-size: 50px;
+    margin: 0px 0 10px 0 ;
+    max-width: 20%;
+    line-height: 1.1;
+    max-width: 25%;
+
+}
+
+h4 {/*-----SUBTITULOS------- */
+    font-size: 30px;
+    color: var(--accent-color);
+    margin: 0;
+    max-width: 50%;
+
+}
+
+/*---CTA---*/ 
+h5{
+    font-size: px;
+    color: var(--accent-color);
+    margin: 0;
+    max-width: 50%;
+    margin-top: 20px;    
+}
+
+h6 {
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px 0 10px 0 ;
+    max-width: 35%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px 30px 100px;
+}
+
+/*-------------------CONTENT 1------------*/
+.content1 {
+    background-color: var(--primary-color);
+}
+
+.content1 p {
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+/*-------------------CONTENT 2------------*/
+.content2 {
+    background-color: var(--secundary-color);
+    margin-top: -15.8px;
+}
+
+.content2 p {
+    color: var(--text-color);
+}
+
+.content2 h4 {
+    margin: 20px 0 20px 0   ;
+}
+
+
+/*-------------------CONTENT 3------------*/
+
+div#content.content3{
+    padding-bottom: 0;
+    height: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+.content3 {
+    background-color: var(--terciary-color);
+    margin-top: -15.7px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    max-height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.content3 a {
+    text-decoration: none;
+    color: var(--accent-color);
+    border-bottom: 1px solid transparent;
+}
+
+.content3 a:hover {
+    color: #ff7949;
+}
+
+.content3 p {
+    color: var(--secundary-color);
+}
+
+.content3 h3 {
+    color: var(--secundary-color);
+}
+
+.content3 h6 {
+    color: var(--secundary-color);
+}
+
+.content3 img {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    padding-left: 20%;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+/*-------------------CONTENT 4------------*/
+
+div#content.content4{
+    height: 100%;
+    padding: 50px 0 50px 0;
+    padding-top: 50px;
+    flex-wrap: nowrap;
+}
+
+.content4 {
+    background-color: var(--secundary-color);
+    margin-top: -15.7px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    max-height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
+
+
+.content4 ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    flex-wrap: nowrap;
+    border-top: 1.5px solid var(--accent-color);
+}
+
+.content4 ul li {
+    flex: 1;
+}
+
+.content4 ul li img {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 500px;    
+}
+
+.content4 ul li.odd {
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.content4 ul li.even {
+    background-color: var(--secundary-color);
+    transition: 0.3s;
+
+}
+
+.content4 ul li:hover {
+    background-color: var(--accent-color);
+}
+
+
+
+
+
+/*----------CONCIERTOS----------*/
+.concert h3 {
+    font-size: 20px;
+}
+
+.concert-group ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    align-items: center;
+    border-bottom: solid 1px #ffffff42;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.concert-group ul.titulo {
+    font-size: 25px;
+}
+
+.concert-group ul li {
+    display: flex; /* La verdad que simplemente funciona asique a la minima quito esto*/
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    color: var(--text-color);
+}
+
+.concert-group ul li a {
+    font-size: 20px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/*----------MERCH----------*/
+
+
+.content4.merch {
+    flex-direction: row;
+}

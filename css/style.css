@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #C50D08;
+    --secundary-color: #0d2743;
+    --terciary-color: #E2D7C4;
+    --accent-color: #F7632B;
+    --text-color: #FFFFFF;
+    --text-color2: #0d2743;
+    --decegue-color: #c581ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif, "Basic";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+
+/*------------------MENU-------------------------*/
+header {
+    background: #ffffff;
+    background: linear-gradient(180deg, #0d274342 77%, #ffffff00 100%); /*var(--accent-color)*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+header img {
+    max-width: 140px;
+    max-height: 80px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    width: 160%;
+}
+
+nav ul li {
+    display: flex; /* La verdad que simplemente funciona asique a la minima quito esto*/
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+nav ul li > a.active {
+    color: var(--primary-color);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    width: 70px;
+}
+
+.login {
+    background: var(--accent-color);
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+
+nav ul li a:hover {
+    background: #ffffff26;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*------------------FOOTER-------------------------*/
+
+footer {
+    background: var(--accent-color);
+    position: sticky;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+footer ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    
+}
+
+footer li {
+    flex: 1px;
+    color: var(--secundary-color);
+
+}
+
+footer a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: auto;
+    list-style: none;
+    color: var(--secundary-color);
+
+
+}
+
+footer li a strong {
+    color: var(--decegue-color)
+}
+
+
+
+/*-----Slider animation-----*/
+.lineanimacion{
+
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.lineanimacion:after {
+content: '';
+height: 1px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--accent-color);
+transition: width 0.25s linear;
+}
+
+.lineanimacion:hover::after{
+    width: 100%;
+}

@@ -1,0 +1,70 @@
+main {
+position: relative;
+}
+
+main div#portada >h1 {
+    color: var(--text-color);
+}
+
+main div#portada > h2 {
+    color: var(--text-color);
+}
+
+main div#portada > h3 {
+    color: var(--text-color);
+}
+
+nav ul li > a.active {
+    color: var(--primary-color);
+}
+
+/* EN PORTADA QUE LA IMAGEN  DE LUCHO QUE PONGA SE QUEDE FIJA Y SEA TAPADA POR EL RESTO DEL CONTENIDO*/
+.background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1019px;
+}
+
+.portada {
+    height: 788.2px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.portada h1 {
+    font-size: 100px;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+.portada h2 {
+    font-size: 40px;
+    font-style:italic; 
+}
+
+.portada p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: var(--text-color);
+}
+
+
+/*BOTON CTA ESCUCHAR ALBUM*/
+.cta-escuchar {
+    background-color: #fc4603;
+  
+    border-radius: 6px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.cta-escuchar:hover {
+padding: 13px 25px 13px 25px;
+border-radius: 12px;
+transition: .2s;
+}
+
+main div a img {
+    margin-left: 5px;
+}
