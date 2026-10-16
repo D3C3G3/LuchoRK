@@ -106,7 +106,7 @@ footer ul {
 footer li {
     flex: 1px;
     color: var(--secundary-color);
-
+    display: flex;
 }
 
 footer a {
@@ -114,17 +114,24 @@ footer a {
     display: flex;
     flex-direction: row;
     flex: 1;
-    width: auto;
     list-style: none;
     color: var(--secundary-color);
+    justify-content: center;
+    width: 30px;
+}
 
+.github {
+    max-width: 30px;
+}
 
+footer p {
+    display: flex;
+    gap: 5px;
 }
 
 footer li a strong {
     color: var(--decegue-color)
 }
-
 
 
 /*-----Slider animation-----*/
